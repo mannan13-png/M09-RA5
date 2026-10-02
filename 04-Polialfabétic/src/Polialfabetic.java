@@ -9,7 +9,7 @@ public class Polialfabetic {
                                          "AÀÁÄBCÇDEÈÉËFGHIÌÍÏJKLMNÑOÒÓÖPQRSTUÙÚÜVWXYZ" +
                                          "0123456789 ,.:;!?¡¿\"'()-";
 
-    public static String clauSecreta = "laSevaContrasenya123";
+    private static String clauSecreta = "laSevaContrasenya123";
     public static Random random;
     public static List<Character> alfabetPermutat = new ArrayList<>();
 
@@ -22,7 +22,7 @@ public class Polialfabetic {
         for (char c : ALFABET.toCharArray()) {
             alfabetPermutat.add(c);
         }
-        Collections.shuffle(alfabetPermutat, random);
+        Collections.shuffle(alfabetPermutat, random); 
     }
 
     public static String xifraPoliAlfa(String msg) {
